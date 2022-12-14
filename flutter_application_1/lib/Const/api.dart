@@ -1,0 +1,1 @@
+var apiURL = "jsonplaceholder.typicode.com";
