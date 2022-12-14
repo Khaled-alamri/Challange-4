@@ -14,11 +14,16 @@ class Screen1 extends StatelessWidget {
       body: ListView(
         children: [
           GetBuilder<Data>(builder: (_) {
-            return Text(datacontroller.Data1.toString());
+            return Column(
+              children: [
+                Text(datacontroller.Data2[0].title.toString()),
+                Text(datacontroller.Data1[0].email.toString()),
+              ],
+            );
           }),
           ElevatedButton(
               onPressed: () {
-                datacontroller.data();
+                
                 datacontroller.update();
               },
               child: Text("Data"))
